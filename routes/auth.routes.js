@@ -1,9 +1,19 @@
 import {Router} from "express";
 
+import {singIn, singOut, singUp} from "../controllers/auth.controller.js";
+
 const authRoutes = Router();
 
-authRoutes.post('/sign-up', (req, res) => res.send({title: 'Sign Up'}));
-authRoutes.post('/sign-in', (req, res) => res.send({title: 'Sign In'}));
-authRoutes.post('/sign-out', (req, res) => res.send({title: 'Sign Out'}));
+
+// Path : /api/v1/auth/sing-up
+authRoutes.post('/sign-up', singUp);
+
+//Path : /api/v1/auth/sing-in
+authRoutes.post('/sign-in', singIn);
+
+//Path : /api/v1/auth/sing-out
+authRoutes.post('/sign-out', singOut);
 
 export default authRoutes;
+
+//stoped at 1:40
