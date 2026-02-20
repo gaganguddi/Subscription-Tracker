@@ -4,6 +4,8 @@ import  bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import {JWT_EXPIRES_IN, JWT_SECRET} from "../config/env.js";
 
+
+// ->/api/v1/auth/sign-up -> POST BODY -> {name, email, password}  -> Create a new user
 //What is a req body? -> req.body is a object containing data from the client (POST request)
 export const signUp = async (req, res, next) => {
     const session = await mongoose.startSession();
@@ -50,6 +52,37 @@ export const signUp = async (req, res, next) => {
 }
 
 export const signIn = async (req, res, next) => {
+    try{
+        const{ email, password } = req.body;
+
+        const user = await  User.findOne({ email });
+
+        if(!user) {
+            const error = new Error('User not found');
+            error.statusCode = 404;
+            throw error;
+        }
+
+        const isPasswordVaild = await bcrypt.compare(password, user.password);
+        if(!isPasswordVaild) {
+            const error = new Error('Invaild password');
+            error.statusCode = 401
+            throw error;
+        }
+        const token = jwt.sign({userId: user._id},JWT_SECRET,{ expiresIn: JWT_EXPIRES_IN });
+
+        res.status(200).json({
+            success: true,
+            message: 'User signed in successfully',
+            date:{
+                token,
+                user,
+            }
+        });
+
+    }catch(error){
+        next(error);
+    }
 
 }
 export const signOut = async (req, res, next) => {
