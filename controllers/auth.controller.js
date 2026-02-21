@@ -74,7 +74,7 @@ export const signIn = async (req, res, next) => {
         res.status(200).json({
             success: true,
             message: 'User signed in successfully',
-            date:{
+            data:{
                 token,
                 user,
             }

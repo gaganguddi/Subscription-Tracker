@@ -1,0 +1,88 @@
+200 (ok) -> the request was successful
+201 (created) -> a new resource was created
+400 (Bad request) -> the request was invalid
+404(Not Found)-> The resource doesn't exist
+500(internal server Error) -> something went wrong on the server
+
+OMR ( object relational mapper)
+
+Backend Architectures
+
+project process:
+in terminal: 
+1,npx express-generator --no-view --git ./
+2,npm install --save-dev nodemon
+add this 2 line "type": "module", and "name":"subdub",   "start": "node app.js",
+    "dev" : "nodemon app.js"
+
+commend to run project : npm start, npm run dev
+
+to run smooth install:
+nps eslint --init
+
+Project Link: 
+https://cart.hostinger.com/pay/2083bce0-eb73-41bf-91ad-7a0bb141bf96?_ga=GA1.1.1765162737.1771087813&_ga_73N1QWLEMH=GS2.1.s1771087812%24o1%24g1%24t1771087943%24j45%24l0%24h184801377%24dZm4eS6inCswT0Ht5CgkoUEx1YZW-ysi0gw&session_id=1771087812&device_id=5bfb4eb3-9ebe-4864-acff-a38d8b4fc983&from=websites
+
+https://app.arcjet.com/sites/site_01khega7t1ffyaqntd9vwj40vf/sdk-configuration?first-install
+
+https://cloud.mongodb.com/v2/6991f319a384015a68bf5763#/overview
+
+https://github.com/gaganguddi/Subscription-Tracker/tree/main
+
+https://console.upstash.com/workflow/149b7054-f67e-4b88-b929-a578291f3371/details?teamid=0
+
+video link: 
+https://www.youtube.com/watch?v=rOpEN1JDaD0&t=319s
+
+
+JWT section:
+npm install jsonwebtoken bcryptjs // it helps to make tokens for security and create longer tokens 
+
+first api's production:
+{
+  "success": true,
+  "message": "User created successfully",
+  "data": {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTk3MDRkYTBiMTZlNTQxOTkxNzI0ODciLCJpYXQiOjE3NzE1MDQ4NTgsImV4cCI6MTc3MTU5MTI1OH0.pjv3DNXC0TEe6kDrIJtwnFGUhqBYMcHQgMQk3S5XjuE",
+    "user": {
+      "name": "Abhishek",
+      "email": "gagan@gmail.com",
+      "password": "$2b$10$W5zpczBsbO1RlBJmyOzkseCKo3b.rLEcTSCvwLSo6Ot0tOteS/VAO",
+      "_id": "699704da0b16e54199172487",
+      "createdAt": "2026-02-19T12:40:58.071Z",
+      "updatedAt": "2026-02-19T12:40:58.071Z",
+      "__v": 0
+    }
+  }
+}
+
+Stop in 1:45:26 time line 
+
+Data for testing:
+{
+  "success": true,
+  "message": "User created successfully",
+  "data": {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTk4OTVmNDRmYjVhNTJhN2M4OTgwMTUiLCJpYXQiOjE3NzE2MDc1NDAsImV4cCI6MTc3MTY5Mzk0MH0.mkyRZS7lsb6ViEx1PJqn_GYf8PTwLlOW6QhKx8J8S6U",
+    "user": {
+      "name": "Gagan H",
+      "email": "gaganhguddi3@gmail.com",
+      "password": "$2b$10$0724Aso5qwurtuLOWAEob.zJLlqN6yayOlXtAQH8reoUbOmHXDYla",
+      "_id": "699895f44fb5a52a7c898015",
+      "createdAt": "2026-02-20T17:12:20.554Z",
+      "updatedAt": "2026-02-20T17:12:20.554Z",
+      "__v": 0
+    }
+  }
+}
+
+stoped at Subscription time line : 2:13:03
+
+
+
+
+
+
+
+
+

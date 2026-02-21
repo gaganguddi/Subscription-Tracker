@@ -1,4 +1,6 @@
 import {Router} from 'express';
+import authorize from "../middlewares/auth.middleware.js";
+import {createSubscription} from "../controllers/subscription.controller.js";
 
 const subscriptionRoutes = Router();
 
@@ -6,7 +8,12 @@ subscriptionRoutes.get('/', (req, res) => res.send({title: 'GET all subscription
 
 subscriptionRoutes.get('/:id', (req ,res)  => res.send({title: 'GET  subscription datails'}));
 
-subscriptionRoutes.post('/', (req, res) => res.send({title: 'CREATE subscriation'}));
+subscriptionRoutes.post('/', authorize,createSubscription);
+//sample test for postman
+/*subscriptionRoutes.post('/', (req, res, next) => {
+    console.log("Body received:", req.body);
+    // res.send("It works!");
+});*/
 
 subscriptionRoutes.put('/:id', (req, res) => res.send({title: 'UPDATE subscriation'}));
 
