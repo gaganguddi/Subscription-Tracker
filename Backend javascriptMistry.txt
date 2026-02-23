@@ -78,6 +78,24 @@ Data for testing:
 
 stoped at Subscription time line : 2:13:03
 
+sign in :
+{
+  "success": true,
+  "message": "User signed in successfully",
+  "date": {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTk4OTVmNDRmYjVhNTJhN2M4OTgwMTUiLCJpYXQiOjE3NzE2ODIzNzIsImV4cCI6MTc3MTc2ODc3Mn0.JK_EQz6FNF2cLdT-2WepNZZZCyuwYZTtrP28ApGY-7Q",
+    "user": {
+      "_id": "699895f44fb5a52a7c898015",
+      "name": "Gagan H",
+      "email": "gaganhguddi3@gmail.com",
+      "password": "$2b$10$0724Aso5qwurtuLOWAEob.zJLlqN6yayOlXtAQH8reoUbOmHXDYla",
+      "createdAt": "2026-02-20T17:12:20.554Z",
+      "updatedAt": "2026-02-20T17:12:20.554Z",
+      "__v": 0
+    }
+  }
+}
+
 
 
 
